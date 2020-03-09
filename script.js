@@ -16,11 +16,3 @@ let acc = document.getElementsByClassName("accordion");
         });
     }
 
-let accChild = document.getElementsByClassName("accordion").children;
-
-    for (let i = 0; i < accChild.length; i++) { 
-
-        accChild[i].addEventListener("click", function() {
-            accChild.style.borderTopColor = "black";
-        });
-    }
