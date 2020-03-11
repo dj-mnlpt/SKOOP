@@ -1,0 +1,105 @@
+@media only screen and (max-width: 768px) { 
+    .mid-subContainer {
+        display: block;
+        margin: 0;   
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    .filter-option {
+        width: 100%;
+    }
+
+    .product-side {
+        padding: 0 10px;
+    }
+
+    input[type="range"] {
+        width: 99%;
+    }
+
+    .range-gauge {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .range-gauge > div:nth-child(2) {
+        margin-left: 8px;
+    }
+    .range-gauge > div:nth-child(3) {
+        margin-left: 15px;
+    }
+    .range-gauge > div:nth-child(4) {
+        margin-left: 10px;
+    }
+
+    .range-pointer {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 108%;
+      
+    }
+
+    .range-pointer > div {
+        height: 10px;
+        width: 1px;
+        background-color: black;
+    }
+    
+    .col-text h6 { 
+        font-size: 16px;
+    }
+
+    .col-card a {
+        margin-right: 0px;
+        margin-bottom: 48px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .mid-subContainer {
+        margin: 0;
+    }
+
+    .col-card a {
+        margin-right: 0px;
+        margin-bottom: 48px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .mobile-button {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.4s;
+        outline: none;
+    }
+
+    .filter-options {  
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        display: none;
+    }
+
+    .col-card a {
+        margin-right: 0px;
+        margin-bottom: 48px;
+    }
+
+    .mid-filter-sidebar {
+        padding: 0 10px;
+        outline: none;
+    }
+
+
+}

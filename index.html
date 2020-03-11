@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Collection</title>
@@ -28,10 +29,27 @@
         
         <div class="mid-subContainer">
             <section class="mid-filter-sidebar">
-                <div class="filter-options-mobile"></div>
+                <div class="filter-options-mobile">
+                    <button class="mobile-button" type="button">Sort by</button>
+                </div>
                 <div class="filter-options">
+                    <!-- <div class="filter-selections-wrapper">
+                        <div class="filter-selections-block-title">
+                            <h3><span>Refine By</span></h3>
+                            <a href="#">Clear All</a>
+                        </div>
+
+                        <div class="filter-selections-selected-items">
+                            <div class="selected-item filter-option-label">
+                                <a href="#">
+                                    <span class="selected-type"><span>Gender</span>: <strong>Women</strong></span>
+                                    <span class="filter-clear"></span>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>-->
                     <div class="filter-options-wrapper">
-                        <div  class="filter-option">
+                        <div class="filter-option">
                             <!-- <div class="option-headers">     -->
                             <button class="accordion">
                                 <span class="arrow"></span>
@@ -120,21 +138,35 @@
                               
                             <!-- </div> -->
                             <div class="filter-panels price">
-                                <div>
+                                <div class="price">
                                     <div class="range-amount">
-                                        <input type="text" class="range-amount-option" value="222.00">
+                                        <input type="text" class="range-amount-option" value="222.00" class="priceInput" id="priceInputMin">
                                         <div class="range-amount-seperator">-</div>
-                                        <input type="text" class="range-amount-option" value="2,499.00">
+                                        <input type="text" class="range-amount-option" value="2,499.00" class="priceInput" id="priceInputMax">
                                     </div>
+
                                     <div class="range-slider">
-                                        <input type="range" min="0" max="50" value="0" id="lower">
+                                        <div class="rangeContainer">
+                                            <input type="range" min="222" max="2499" value="222" class="slider" id="priceRangeMin">
+                                            <input type="range" max="2499" min="222" value="2499" class="slider" id="priceRangeMax">
+                                            <div class="range-pointer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                  
+
                                     <div class="range-gauge">
-                                        <div class="">222</div>
-                                        <div class="">791</div>
-                                        <div class="">1361</div>
-                                        <div class="">1930</div>
-                                        <div class="">2499</div>
+                                        <div class="range-points">222</div>
+                                        <div class="range-points">791</div>
+                                        <div class="range-points">1361</div>
+                                        <div class="range-points">1930</div>
+                                        <div class="range-points">2499</div>
                                     </div>
                                 </div>
                             </div>
@@ -501,8 +533,10 @@
         <!-- <div class="main-container-right"></div> -->
          <!-- <footer></footer> -->
          <!-- jQuery -->
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
          <script src="script.js"></script>
+  
+
     </main>
    
 </body>
