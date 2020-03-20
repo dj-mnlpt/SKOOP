@@ -1,4 +1,62 @@
+@media only screen and (max-width: 425px) {
+
+    .mid-subContainer {
+        margin-top: 50px;
+    }
+
+    #mobile-button {
+        display: block;
+        cursor: pointer;
+        transition: 0.4s;
+        outline: none;
+    }
+
+    .filter-options-wrapper {  
+        overflow: hidden;
+        transition: max-height 1s ease-in-out;
+        max-height: 0;
+
+    }
+
+    .col-card a {
+        margin-right: 0px;
+        margin-bottom: 48px;
+    }
+
+    .mid-filter-sidebar {
+        padding: 0 10px;
+    }
+
+    .col-img img{
+        display: block;
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+    }
+
+    .mid-subContainer {
+        margin-top: 50px;
+    }
+
+    .upper-subContainer h1 {
+        margin-top: 15px;
+    }
+
+    .upper-subContainer  {
+        padding-top: 20px;
+    }
+
+    .col-price h5 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+}
+
+/* look at shopify css jarom (main margin-top was adjusted from 140px to 170px)*/
+
 @media only screen and (max-width: 768px) { 
+    
     .mid-subContainer {
         display: block;
         margin: 0;   
@@ -42,8 +100,7 @@
         display: flex;
         justify-content: space-between;
         position: absolute;
-        width: 108%;
-      
+        width: 108%;     
     }
 
     .range-pointer > div {
@@ -51,7 +108,7 @@
         width: 1px;
         background-color: black;
     }
-    
+
     .col-text h6 { 
         font-size: 16px;
     }
@@ -61,45 +118,58 @@
         margin-bottom: 48px;
     }
 
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .mid-subContainer {
-        margin: 0;
-    }
-
-    .col-card a {
-        margin-right: 0px;
-        margin-bottom: 48px;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-
-    .mobile-button {
-        display: block;
-        cursor: pointer;
+    .col-img img {
         width: 100%;
-        transition: 0.4s;
-        outline: none;
     }
-
-    .filter-options {  
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        display: none;
-    }
-
-    .col-card a {
-        margin-right: 0px;
-        margin-bottom: 48px;
-    }
-
+    
     .mid-filter-sidebar {
-        padding: 0 10px;
-        outline: none;
+        width: 100%;
     }
 
+    .mid-products {
+        width: 100%;
+    }
 
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1118px){ 
+    .mid-subContainer {
+        margin: 50px 0 0 0;   
+        /* flex-wrap: wrap;   */
+    }
+
+    .col-img {
+        height: 308.73px;
+    }
+
+    .col-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .col-card a {
+        margin-right: 20px;
+    } */
+
+    /* .mid-filter-sidebar {
+        padding-right: 0;
+        width: 180px;
+
+    } */
+
+    .filter-option {
+        width: 100%;
+    }
+
+    .filter-options-wrapper {
+        width: 100%;
+    }
+   
+}
+@media only screen and (min-width: 1400px) {
+    .mid-subContainer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }

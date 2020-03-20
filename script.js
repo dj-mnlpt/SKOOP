@@ -17,12 +17,15 @@ let acc = document.getElementsByClassName("accordion");
                 // panel.style.display = "none";
                 arrow.classList.add("up");
                 panel.style.maxHeight = panel.scrollHeight + "px";  
-                panel.style.marginBottom = 20 + "px";          
+                panel.style.marginBottom = 20 + "px";    
+                   
             }
+           
         });
+       
     }
-    $(".accordion").trigger('click');
-
+   
+    $(".accordion").trigger('click');   
 
 let slider = document.getElementById("priceRangeMin");
 let output = document.getElementById("priceInputMin");
@@ -48,21 +51,38 @@ let output1 = document.getElementById("priceInputMax");
         slider1.value = this.value;
         }
 
-let mobileBtn = document.getElementsByClassName("mobile-button");
+let mobileBtn = document.getElementById("mobile-button");
 
-    for (let j = 0; j < mobileBtn.length; j++) {
+    // for (let j = 0; j < mobileBtn.length; j++) {
 
-        mobileBtn[j].addEventListener("click", function() {
-            this.classList.toggle("active");
+    //     mobileBtn[j].addEventListener("click", function() {
+    //         this.classList.toggle("active");
+            
            
-            let filterPanel = this.nextElementSibling;
-            console.log(filterPanel);
-            if (filterPanel.style.maxHeight) {      
+    //         let filterOptions = this.nextElementSibling;
+    //         console.log(filterOptions);
+    //         if (filterOptions.style.maxHeight) {      
                 
-                filterPanel.style.maxHeight = null; 
+    //             filterOptions.style.maxHeight = null; 
                 
-            } else  {
-                filterPanel.style.maxHeight = filterPanel.scrollHeight + "px";
-            }
-        });
+    //         } else  {
+    //             filterOptions.style.maxHeight = filterOptions.scrollHeight + "px";
+    //         }
+    //     });
+    // }
+
+    mobileBtn.onclick = function() {
+        
+        this.classList.toggle("active");   
+        console.log(this);
+        let filterOptions = this.nextElementSibling;
+          console.log(filterOptions);
+          console.log(filterOptions.scrollHeight)
+            if (filterOptions.style.maxHeight) {      
+        
+                filterOptions.style.maxHeight = null; 
+        
+             } else  {
+                filterOptions.style.maxHeight = filterOptions.scrollHeight + "px";
+             }
     }

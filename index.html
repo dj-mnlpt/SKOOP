@@ -27,147 +27,146 @@
             </section>
         </div>
         
-        <div class="mid-subContainer">
+        <div class="mid-subContainer" id="mid-subContainer">
             <section class="mid-filter-sidebar">
-                <div class="filter-options-mobile">
-                    <button class="mobile-button" type="button">Sort by</button>
-                </div>
-                <div class="filter-options">
-                    <!-- <div class="filter-selections-wrapper">
-                        <div class="filter-selections-block-title">
-                            <h3><span>Refine By</span></h3>
-                            <a href="#">Clear All</a>
-                        </div>
+                <!-- <div class="filter-options-mobile"></div> -->
+                
+                <!-- <div class="filter-selections-wrapper">
+                    <div class="filter-selections-block-title">
+                        <h3><span>Refine By</span></h3>
+                        <a href="#">Clear All</a>
+                    </div>
 
-                        <div class="filter-selections-selected-items">
-                            <div class="selected-item filter-option-label">
-                                <a href="#">
-                                    <span class="selected-type"><span>Gender</span>: <strong>Women</strong></span>
-                                    <span class="filter-clear"></span>
-                                </a>
-                            </div>
-                        </div> 
-                    </div>-->
-                    <div class="filter-options-wrapper">
-                        <div class="filter-option">
-                            <!-- <div class="option-headers">     -->
-                            <button class="accordion">
-                                <span class="arrow"></span>
-                                <h3 class="uppercase">Gender</h3>
-                            </button>
-                            <!-- </div> -->
-                            <div class="filter-panels">
+                    <div class="filter-selections-selected-items">
+                        <div class="selected-item filter-option-label">
+                            <a href="#">
+                                <span class="selected-type"><span>Gender</span>: <strong>Women</strong></span>
+                                <span class="filter-clear"></span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>-->
+                <button id="mobile-button" type="button">Sort by</button>
+                <div class="filter-options-wrapper">
+                    
+                    <div class="filter-option">
+                        <!-- <div class="option-headers">     -->
+                        <button class="accordion">
+                            <span class="arrow"></span>
+                            <h3 class="uppercase">Gender</h3>
+                        </button>
+                        <!-- </div> -->
+                        <div class="filter-panels">
+                            <ul>
+                                <li><a href="#"><span>Women (78)</span></a></li>
+                                <li><a href="#"><span>Men (78)</span></a></li>      
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-option">
+                        <!-- <div class="option-headers"> -->
+                        <button class="accordion">
+                            <span class="arrow"></span>
+                            <h3 class="uppercase">Product type</h3>
+                        </button>
+                        <!-- </div> -->
+                        <div class="filter-panels product">
+                            <div class="women prod-active">
                                 <ul>
-                                    <li><a href="#"><span>Women</span></a></li>
-                                    <li><a href="#"><span>Men</span></a></li>      
+                                    <li><a href="#"><label><input type="checkbox"><span>Crop-top (1)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>Hat (10)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>Hoodie (5)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>Sweater (5)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>T-shirt (54)</span></label></a></li>
+                                </ul>
+                            </div>
+                            <div class="men prod-inactive">
+                                <ul>
+                                    <li><a href="#"><label><input type="checkbox"><span>Hat (10)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>Hoodie (5)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>Sweater (5)</span></label></a></li>
+                                    <li><a href="#"><label><input type="checkbox"><span>T-shirt (54)</span></label></a></li>
                                 </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="filter-option">
-                            <!-- <div class="option-headers"> -->
-                            <button class="accordion">
-                                <span class="arrow"></span>
-                                <h3 class="uppercase">Product type</h3>
-                            </button>
-                            <!-- </div> -->
-                            <div class="filter-panels product">
-                                <div class="women prod-active">
-                                    <ul>
-                                        <li><a href="#"><label><input type="checkbox"><span>Crop-top (1)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>Hat (10)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>Hoodie (5)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>Sweater (5)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>T-shirt (54)</span></label></a></li>
-                                    </ul>
+                    <div class="filter-option">
+                        <!-- <div class="option-headers"> -->
+                        <button class="accordion">
+                            <span  class="arrow"></span>
+                            <h3 class="uppercase">Stock Status</h3>
+                        </button>
+                            
+                        <!-- </div> -->
+                        <div class="filter-panels stock">
+                            <ul>
+                                <li><a href="#"><label><input type="checkbox"><span>In Stock (23)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>Out of Stock (56)</span></label></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-option">
+                        <!-- <div class="option-headers"> -->
+                        <button class="accordion">
+                            <span class="arrow"></span>
+                            <h3 class="uppercase">Size</h3>
+                        </button>
+                            
+                        <!-- </div> -->
+                        <div class="filter-panels size">
+                            <ul>
+                                <li><a href="#"><label><input type="checkbox"><span>FREESIZE (10)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>L (58)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>M (56)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>S (56)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>XL (62)</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>XS (46))</span></label></a></li>
+                                <li><a href="#"><label><input type="checkbox"><span>XXS (29)</span></label></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-option">
+                        <!-- <div class="option-headers"> -->
+                        <button class="accordion">
+                            <span class="arrow"></span>
+                            <h3 class="uppercase">Price (₱)</h3>
+                        </button>
+                            
+                        <!-- </div> -->
+                        <div class="filter-panels price">
+                            <div class="price">
+                                <div class="range-amount">
+                                    <input type="text" class="range-amount-option" value="222.00" class="priceInput" id="priceInputMin">
+                                    <div class="range-amount-seperator">-</div>
+                                    <input type="text" class="range-amount-option" value="2,499.00" class="priceInput" id="priceInputMax">
                                 </div>
-                                <div class="men prod-inactive">
-                                    <ul>
-                                        <li><a href="#"><label><input type="checkbox"><span>Hat (10)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>Hoodie (5)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>Sweater (5)</span></label></a></li>
-                                        <li><a href="#"><label><input type="checkbox"><span>T-shirt (54)</span></label></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="filter-option">
-                            <!-- <div class="option-headers"> -->
-                            <button class="accordion">
-                                <span  class="arrow"></span>
-                                <h3 class="uppercase">Stock Status</h3>
-                            </button>
-                               
-                            <!-- </div> -->
-                            <div class="filter-panels stock">
-                                <ul>
-                                    <li><a href="#"><label><input type="checkbox"><span>In Stock (23)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>Out of Stock (56)</span></label></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="filter-option">
-                            <!-- <div class="option-headers"> -->
-                            <button class="accordion">
-                                <span class="arrow"></span>
-                                <h3 class="uppercase">Size</h3>
-                            </button>
-                              
-                            <!-- </div> -->
-                            <div class="filter-panels size">
-                                <ul>
-                                    <li><a href="#"><label><input type="checkbox"><span>FREESIZE (10)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>L (58)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>M (56)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>S (56)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>XL (62)</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>XS (46))</span></label></a></li>
-                                    <li><a href="#"><label><input type="checkbox"><span>XXS (29)</span></label></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="filter-option">
-                            <!-- <div class="option-headers"> -->
-                            <button class="accordion">
-                                <span class="arrow"></span>
-                                <h3 class="uppercase">Price (₱)</h3>
-                            </button>
-                              
-                            <!-- </div> -->
-                            <div class="filter-panels price">
-                                <div class="price">
-                                    <div class="range-amount">
-                                        <input type="text" class="range-amount-option" value="222.00" class="priceInput" id="priceInputMin">
-                                        <div class="range-amount-seperator">-</div>
-                                        <input type="text" class="range-amount-option" value="2,499.00" class="priceInput" id="priceInputMax">
-                                    </div>
-
-                                    <div class="range-slider">
-                                        <div class="rangeContainer">
-                                            <input type="range" min="222" max="2499" value="222" class="slider" id="priceRangeMin">
-                                            <input type="range" max="2499" min="222" value="2499" class="slider" id="priceRangeMax">
-                                            <div class="range-pointer">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
+                                <div class="range-slider">
+                                    <div class="rangeContainer">
+                                        <input type="range" min="222" max="2499" value="222" class="slider" id="priceRangeMin">
+                                        <input type="range" max="2499" min="222" value="2499" class="slider" id="priceRangeMax">
+                                        <div class="range-pointer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
                                     </div>
+                                </div>
 
-                                  
+                                
 
-                                    <div class="range-gauge">
-                                        <div class="range-points">222</div>
-                                        <div class="range-points">791</div>
-                                        <div class="range-points">1361</div>
-                                        <div class="range-points">1930</div>
-                                        <div class="range-points">2499</div>
-                                    </div>
+                                <div class="range-gauge">
+                                    <div class="range-points">222</div>
+                                    <div class="range-points">791</div>
+                                    <div class="range-points">1361</div>
+                                    <div class="range-points">1930</div>
+                                    <div class="range-points">2499</div>
                                 </div>
                             </div>
                         </div>
@@ -180,18 +179,18 @@
             
                     <div class="col col-card">
                         <a href="#" class="p-relative d-block">
-                            <div class="col-img">
-                                <img src="https://cdn.shopify.com/s/files/1/0267/2846/4444/products/Hoodie-Trapped-Red-Back-1_large.jpg?v=1580366344" alt="default">
+                        <div class="col-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0267/2846/4444/products/Hoodie-Trapped-Red-Back-1_large.jpg?v=1580366344" alt="default">
+                        </div>
+                        <div class="col-banner">
+                        <p>Sold Out!</p>
+                        </div>
+                        <div class="col-text">
+                            <h6>Dark Red Trapped Hoodie (SHIPS OUT 1.31.2020)</h6>
+                            <div class="col-price">
+                                <h5><span>₱2,499.00</span></h5>
                             </div>
-                            <div class="col-banner">
-                            <p>Sold Out!</p>
-                            </div>
-                            <div class="col-text">
-                                <h6>Dark Red Trapped Hoodie (SHIPS OUT 1.31.2020)</h6>
-                                <div class="col-price">
-                                    <h5><span>₱ 2,499.00</span></h5>
-                                </div>
-                            </div>
+                        </div>
                         </a>
                     </div>
                     <div class="col col-card">
@@ -205,7 +204,7 @@
                             <div class="col-text">
                                 <h6>ANXIOUS CREW RINGER</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,099.00</span></h5>
+                                    <h5><span>₱1,099.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -221,8 +220,8 @@
                             <div class="col-text">
                                 <h6>Trapped Reversible Bucket Hat</h6>
                                 <div class="col-price">
-                                    <h5><span class="discounted">₱ 1,799.00</span></h5>
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span class="discounted">₱1,799.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -238,8 +237,8 @@
                             <div class="col-text">
                                 <h6>RYU TEE</h6>
                                 <div class="col-price">
-                                    <h5><span class="discounted">₱ 1,099.00</span></h5>
-                                    <h5><span>₱ 699.00</span></h5>
+                                    <h5><span class="discounted">₱1,099.00</span></h5>
+                                    <h5><span>₱699.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -255,7 +254,7 @@
                             <div class="col-text">
                                 <h6>Anxiety Yellow Hoodie</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 2,499.00</span></h5>
+                                    <h5><span>₱2,499.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -272,7 +271,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Asakusa Tee</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -289,7 +288,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Sayonara Jersey</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 2,499.00</span></h5>
+                                    <h5><span>₱2,499.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -307,7 +306,7 @@
                             <div class="col-text">
                                 <h6>TAKESHI'S CASTLE</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,099.00</span></h5>
+                                    <h5><span>₱1,099.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -339,7 +338,7 @@
                             <div class="col-text">
                                 <h6>UME Tee</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -355,7 +354,7 @@
                             <div class="col-text">
                                 <h6>Nami Blue Tee</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -372,7 +371,7 @@
                                 <p>Skoop Season 7</p>
                                 <h6>SS7 Yin & Yang</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,099.00</span></h5>
+                                    <h5><span>₱1,099.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -389,7 +388,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Mt. Fuji Tee</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -406,7 +405,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Osaka Race Jersey</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,499.00</span></h5>
+                                    <h5><span>₱1,499.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -424,7 +423,7 @@
                             <div class="col-text">
                                 <h6>TORA YELLOW TEE</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,099.00</span></h5>
+                                    <h5><span>₱1,099.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -441,7 +440,7 @@
                                 <h6>Anxious Reversible Bucket Hat</h6>
                                 <div class="col-price">
                                     <h5><span class="discounted">₱ 1,799.00</span></h5>
-                                    <h5><span>₱ 999.00</span></h5>
+                                    <h5><span>₱999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -457,7 +456,7 @@
                             <div class="col-text">
                                 <h6>Anxiety Disorder Hoodie</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 2,499.00</span></h5>
+                                    <h5><span>₱2,499.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -473,7 +472,7 @@
                             <div class="col-text">
                                 <h6>Trapped Black Hoodie</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 2,499.00</span></h5>
+                                    <h5><span>₱2,499.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -490,7 +489,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Ohayo Manila Tee</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,099.00</span></h5>
+                                    <h5><span>₱1,099.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -507,7 +506,7 @@
                                 <p>Skoop Season 8</p>
                                 <h6>SS8 Wolfpack Jersey</h6>
                                 <div class="col-price">
-                                    <h5><span>₱ 1,999.00</span></h5>
+                                    <h5><span>₱1,999.00</span></h5>
                                 </div>
                             </div>
                         </a>
@@ -528,8 +527,7 @@
                 </ul>
             </nav>
         </div>
- 
-
+  
         <!-- <div class="main-container-right"></div> -->
          <!-- <footer></footer> -->
          <!-- jQuery -->
